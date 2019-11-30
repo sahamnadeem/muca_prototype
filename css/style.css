@@ -1,0 +1,60 @@
+
+.head-image{
+	background-image: url(../images/intro\ screen\ img.png);
+	width: 100%;
+	height: 100vh;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+  background-position-x: right;
+  }
+
+
+.signin{
+    border:0;
+    background: none;
+    width: 100%;
+    margin: 5px auto;
+  
+    border: 1px solid #000000;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    padding: 3px 10px;
+    outline: none;
+    
+    
+  }
+  .signButton {
+    display: block;
+    width: 45%;
+    color: white;
+    background: #ff36f1 !important;
+    height: 5.5vh !important;
+    font-size: 14px !important;
+    padding: 0 0;
+  
+   
+  }
+  .signHov:hover{
+    background:#ffffff;
+    color: rgb(0, 0, 0);
+    border-bottom: 4px solid black;
+  }
+  input[type=radio] {
+    width: 15px;
+    height: 18px;
+}
+  h4 { 
+            display: flex; 
+            flex-direction: row; 
+            font-size: 16px;
+        } 
+          
+        h4:before, 
+        h4:after { 
+            content: ""; 
+            flex: 1 1; 
+            border-bottom: 1px solid #000; 
+            margin: auto; 
+        } 
+        
