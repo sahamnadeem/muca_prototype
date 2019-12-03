@@ -40,6 +40,28 @@
     color: rgb(0, 0, 0);
     border-bottom: 4px solid black;
   }
+  
+/* black line on click */
+.cool-link2 {
+  display: inline-block;
+  color: #000;
+  text-decoration: none;
+}
+
+ .cool-link2::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #000000;
+  transition: width .3s;
+}
+
+.cool-link2:hover:active,:focus::after {
+  width: auto;
+  transition: width .3s;
+}
+/* black line on click end*/
   input[type=radio] {
     width: 15px;
     height: 18px;
@@ -50,11 +72,14 @@
             font-size: 16px;
         } 
           
-        h4:before, 
-        h4:after { 
-            content: ""; 
-            flex: 1 1; 
-            border-bottom: 1px solid #000; 
-            margin: auto; 
-        } 
-        
+   h4:before, 
+   h4:after { 
+     content: ""; 
+     flex: 1 1; 
+     border-bottom: 1px solid #000; 
+     margin: auto; 
+    } 
+    .btn:focus,.btn:active {
+       outline: none !important;
+       box-shadow: none !important;
+        }

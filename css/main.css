@@ -25,10 +25,22 @@
   .text-div{
     color: #801b79 !important;
 }
+.text-tab-btn{
+  font-size: 16px !important;
+}
 .text-tab{
   color: #ff36f1!important;
   font-size: 18px !important;
   font-weight: bold;
+}
+.card-comp{
+  font-size: 11px ;
+   color: white;
+   text-align: center !important;
+}
+.card-body1 {
+   
+  padding: 0rem !important;
 }
 .card-bodys {
    
@@ -48,7 +60,7 @@
 
 }
 .text-card{
-  font-size: 18px !important;
+  font-size: 14px !important;
 }
 .like-number{
   font-size: 12px !important;
@@ -114,13 +126,23 @@
   width: 40px;
   ;
 }
+.img-width-responsive2{
+  width: 30px;
+  margin-left: 0.3rem;
+ margin-top: 0.5rem !important;
+  
+}
 @media (max-width: 576px) {
   .img-width-responsive{
     width: 35px;
     margin-left: 0.5rem !important;
     ;
   }
-  
+  .img-width-responsive2{
+    width: 35px;
+    margin-left: 0.5rem !important;
+    ;
+  }
   .margin-modal{
     margin-left: 0rem !important;
   }
@@ -264,6 +286,14 @@ hr.new2 {
   width: 50% !important;
   font-size: 14px !important;
 }
+.btn-lg-modal2 {
+  padding: 1.5rem 0.5rem !important;
+  font-size: 1.25rem !important;
+  line-height: 0.5 !important;
+  border-radius: 1rem !important;
+  width: 45% !important;
+  font-size: 14px !important;
+}
 .btn-lg-del {
   padding: 0.75rem 1rem !important;
   font-size: 1.25rem !important;
@@ -310,10 +340,31 @@ hr.new2 {
   transition: width .3s;
 }
 
-.cool-link:hover::after {
-  width: 100%;
+.cool-link:hover:active,:focus::after {
+  width: auto;
   transition: width .3s;
 }
+/* black line on click */
+.cool-link2 {
+  display: inline-block;
+  color: #000;
+  text-decoration: none;
+}
+
+ .cool-link2::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #000000;
+  transition: width .3s;
+}
+
+.cool-link2:hover:active,:focus::after {
+  width: auto;
+  transition: width .3s;
+}
+/* black line on click end*/
 .containerss {
   position: relative;
   width: 50%;
@@ -367,6 +418,17 @@ hr.new2 {
   width: 35%;
   color: white;
   background: #ff36f1 !important;
+  height: 5.5vh !important;
+  font-size: 14px !important;
+  padding: 0 0;
+}
+.cardButton2 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 35%;
+  color: white;
+  background: #801b79 !important;
   height: 5.5vh !important;
   font-size: 14px !important;
   padding: 0 0;
@@ -511,4 +573,8 @@ img.rounded {
   box-shadow: none !important
   ;
 }
-
+.close-btn:focus,.close-btn:active {
+  outline: none !important;
+  box-shadow: none !important
+  ;
+}
